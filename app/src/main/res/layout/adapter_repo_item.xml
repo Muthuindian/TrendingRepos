@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentTop="true">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:text="Google"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/avatar">
+    </TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author"
+        android:text="bioninc"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textColor="@android:color/black"
+        android:text="sndgf jwhegf gefgk wehefkwu"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="15dp"
+        android:id="@+id/color"/>
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_toEndOf="@+id/color"
+        android:layout_toRightOf="@+id/color"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/color"
+        android:textColor="@android:color/darker_gray"
+        android:text="Python"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/star"
+        android:layout_alignBaseline="@+id/color"
+        android:layout_toLeftOf="@+id/starCount"
+        android:src="@drawable/start"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/starCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/darker_gray"
+        android:text="1253">
+    </TextView>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/main"
+        android:layout_marginTop="10dp">
+    </View>
+
+</RelativeLayout>
